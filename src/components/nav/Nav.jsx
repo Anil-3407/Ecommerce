@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Nav.css"
+import { Link } from 'react-router-dom'
 const Nav = () => {
   return (
     <div>
@@ -8,10 +9,10 @@ const Nav = () => {
            <h2>React Routing</h2>
         </div>
         <div className="rightpanel flexcontainer">
-          <a href="">Home</a>
-          <a href="">Product</a>
-          <a href="">Image</a>
-          <a href="">Counter</a>
+          <Link to="/">Home</Link>
+          <Link to="/product">Product</Link>
+          <Link to="/image">Image</Link>
+          <Link to="/counter">Counter</Link>
         </div>
         </div> 
     </div>
